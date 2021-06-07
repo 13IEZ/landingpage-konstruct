@@ -1,0 +1,50 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the form-section of the site/application.
+// -----------------------------------------------------------------------------
+
+.form-section {
+  background-color: #171819;
+  padding: 3.5rem 0;
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond(small-phone) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+label {
+  font-size: 169.23%;
+  color: $text-white;
+  letter-spacing: 0.846154px;
+  font-weight: bold;
+  margin-right: 8.6rem;
+  @include respond(small-phone) {
+    margin: 1rem auto;
+  }
+}
+
+input[type="email"] {
+  height: 4rem;
+  width: 25rem;
+}
+
+::-webkit-input-placeholder {
+  letter-spacing: 0.07px;
+  font-size: 107.7%;
+  padding-left: 1.5rem;
+}
+
+*:focus {
+outline: none;
+}
+
+.btn-form {
+  border: 0;
+  @include respond(small-phone) {
+    margin: 0;
+  }
+}

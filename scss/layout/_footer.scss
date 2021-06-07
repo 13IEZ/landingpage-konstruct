@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.footer {
+  background: #171819;
+  padding: 2.5rem 0;
+
+  &__text {
+    text-align: center;
+    line-height: 1.5rem;
+    letter-spacing: 0.846154px;
+    font-size: 84.62%;
+  }
+}

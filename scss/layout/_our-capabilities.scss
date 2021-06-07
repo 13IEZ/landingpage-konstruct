@@ -1,0 +1,67 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the our-capabilities of the site/application.
+// -----------------------------------------------------------------------------
+
+.our-capabilities {
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7.8rem;
+    @include respond(small-tablets) {
+      margin: 2rem;
+    }
+    @include respond(small-phone) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__main-title {
+    width: 30%;
+    @include respond(small-phone) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__main-title:after {
+    margin: 1.5rem auto;
+  }
+
+  &__text {
+    width: 49%;
+    @include respond(small-tablets) {
+      display: none;
+    }
+  }
+
+  &-services-wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include respond(small-tablets) {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      max-width: 29.5rem;
+      border: 0.1rem solid #E6E6E6;
+      padding: 0 2.2rem;
+      @include respond(small-tablets) {
+        margin: 0 auto;
+      }
+
+      &__title {
+        margin: 2.5rem 0 1.3rem 0;
+      }
+
+      &__icon {
+        margin-top: 4rem;
+      }
+
+      &__text {
+        margin-bottom: 3.9rem;
+      }
+    }
+  }
+}

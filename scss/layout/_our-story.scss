@@ -1,0 +1,94 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the our-story section of the site/application.
+// -----------------------------------------------------------------------------
+
+.our-story {
+
+  &-wrapper {
+    display: flex;
+    margin: 8rem 0 10rem 0;
+    justify-content: center;
+    @include respond(small-tablets) {
+      flex-wrap: wrap;
+      margin: 4rem 0;
+    }
+    @include respond(small-phone) {
+      margin: 2rem 0;
+    }
+
+    &_item {
+      width: 50%;
+      @include respond(small-tablets) {
+        width: 100%;
+      }
+      @include respond(small-phone) {
+        margin: 0 0 2rem 0;
+      }
+    }
+
+    &_item:last-child {
+      display: flex;
+      justify-content: space-around;
+      width: 65%;
+      margin: 3rem 0 0 3rem;
+      @include respond(small-tablets) {
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+      }
+      @include respond(small-phone) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__main-title {
+    margin: 5.7rem 0 8rem 0;
+    text-align: center;
+    @include respond(small-tablets) {
+      margin: 2rem 0 0 0;
+    }
+
+  }
+
+  &__about-text {
+    font-size: 153.85%;
+    line-height: 2.7rem;
+    letter-spacing: 0.1875px;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+
+  &__card-1 {
+    background: url("../uploads/card-1.jpg") no-repeat;
+    background-size: cover;
+    width: 14rem;
+    height: 22.4rem;
+    @include respond(small-phone) {
+      width: 25rem;
+    }
+  }
+
+  &__card-2 {
+    background: url("../uploads/card-2.jpg") no-repeat;
+    background-size: cover;
+    width: 14rem;
+    height: 22.4rem;
+    margin: 0 1rem;
+    @include respond(small-phone) {
+      width: 25rem;
+      margin: 1rem 0;
+    }
+  }
+
+  &__card-3 {
+    background: url("../uploads/card-3.jpg") no-repeat;
+    background-size: cover;
+    width: 14rem;
+    height: 22.4rem;
+    @include respond(small-phone) {
+      width: 25rem;
+    }
+  }
+}

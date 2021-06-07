@@ -1,0 +1,48 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the navigation-bar of the site/application.
+// -----------------------------------------------------------------------------
+
+.navigation {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #E6E6E6;
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    letter-spacing: 1.09091px;
+    line-height: 1.6rem;
+    font-weight: 600;
+    font-size: 92.31%;
+    transition: color 0.2s;
+    margin-left: 3rem;
+    @include respond(small-tablets) {
+      display: none;
+    }
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+
+}
+
+.mobile-nav-icon {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  left: 50%;
+  @include respond(small-tablets) {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+  }
+}

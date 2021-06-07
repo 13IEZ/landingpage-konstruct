@@ -1,0 +1,92 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer-nav of the site/application.
+// -----------------------------------------------------------------------------
+
+.footer-nav {
+  background-color: #141A20;
+  padding: 4rem 0;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include respond(small-tablets) {
+      flex-wrap: wrap;
+    }
+    @include respond(small-phone) {
+      justify-content: center;
+    }
+
+    ul {
+      list-style: none;
+      color: $text-white;
+    }
+
+    &_item {
+      display: flex;
+      flex-wrap: wrap;
+      @include respond(small-phone) {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &_item:first-child {
+      width: 30%;
+      margin-right: 5rem;
+      @include respond(small-phone) {
+        width: 100%;
+        margin: 0 0 1rem 0;
+      }
+    }
+
+    &_item:last-child {
+      flex-wrap: nowrap;
+      align-items: center;
+      @include respond(small-tablets) {
+        width: 40%;
+      }
+
+    }
+  }
+
+  &__text {
+    @include respond(small-tablets) {
+      display: none;
+    }
+  }
+
+  &__link {
+    color: $text-white;
+    font-weight: 600;
+    @include on-event {
+      color: #8b8b8b;
+      text-decoration: none;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    @include respond(small-tablets) {
+      text-align: center;
+    }
+  }
+
+  &__social-link {
+    margin-right: 3rem;
+  }
+
+  &__social-link:last-child {
+    margin-right: 0;
+  }
+
+  &__ul-links {
+    margin: 0 1rem;
+  }
+}
+
+.footer-nav ul {
+  font-weight: 400;
+  font-size: 84.62%;
+}
+

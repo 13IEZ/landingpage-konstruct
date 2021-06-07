@@ -1,0 +1,39 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.header {
+  background: url("../uploads/main-bg.jpg") no-repeat fixed center;
+  background-size: cover;
+  height: 100vh;
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+
+    &_item {
+      align-self: center;
+    }
+
+    &_item:last-child {
+      margin-bottom: 7rem;
+    }
+  }
+
+  &__logo {
+    margin-top: 4.1rem;
+  }
+
+  &__text {
+    color: $text-white;
+    font-weight: 600;
+    line-height: 2.2rem;
+    font-size: 123.08%;
+    text-align: center;
+  }
+
+
+}
+

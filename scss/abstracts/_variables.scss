@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$title-font-stack: 'Bebas Neue', cursive !default;
+
+
+/// Copy text color
+/// @type Color
+$text-color: #48555B !default;
+
+/// White color
+/// @type Color
+$text-white: #fff;
+
+/// Hover color
+/// @type Color
+$text-hover: #00A4E5;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 98rem !default;
+
